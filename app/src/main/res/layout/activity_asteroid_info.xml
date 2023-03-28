@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Asteriod_Info">
+
+    <TextView
+        android:id="@+id/info_Name"
+        android:layout_width="164dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="@string/name_asteroid"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/info_Magnitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <TextView
+        android:id="@+id/info_Magnitude"
+        android:layout_width="157dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/magnitude"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_Name" />
+
+    <TextView
+        android:id="@+id/info_Distance"
+        android:layout_width="179dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="57dp"
+        android:gravity="center"
+        android:text="@string/distance"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/info_Magnitude"
+        app:layout_constraintTop_toBottomOf="@+id/info_Name" />
+
+    <TextView
+        android:id="@+id/info_periode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:text="@string/p_riode_orbitale"
+        app:layout_constraintBottom_toTopOf="@+id/asteroidsView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_Magnitude" />
+
+    <com.example.superasterioddetector.view.AsteroidsView
+        android:id="@+id/asteroidsView"
+        android:layout_width="411dp"
+        android:layout_height="434dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/likeView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/likeView2"
+        android:layout_width="65dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asteroidsView"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
