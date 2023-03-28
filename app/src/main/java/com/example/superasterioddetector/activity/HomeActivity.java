@@ -29,7 +29,7 @@ import java.util.List;
 public class HomeActivity extends AppCompatActivity {
 
     private RequestQueue requestQueue;
-    String api_key = "LKfEL4HHgKid6qP2qE3JC3fUcgHekVkNlsPyHIBn";
+    String api_key = "YOUR_API_KEY";
     String url = "https://api.nasa.gov/neo/rest/v1/feed?start_date=2023-03-22&end_date=2023-03-22&api_key=" + api_key;
     ArrayList<String> names = new ArrayList<String>();
     List<String> id = new ArrayList<>();

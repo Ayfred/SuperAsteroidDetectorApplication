@@ -26,7 +26,7 @@ public class Asteriod_Info extends AppCompatActivity {
 
     String period;
     String asteroid_id;
-    String api_key = "LKfEL4HHgKid6qP2qE3JC3fUcgHekVkNlsPyHIBn";
+    String api_key = "YOUR_API_KEY";
     String url;
     Asteroids as;
     SharedPreferences settings;
